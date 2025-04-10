@@ -2,22 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DevOps Engineer Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+      animation: fadeIn 2s ease-in;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: slideUp 1s ease-in-out;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #00d4ff;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: '✔';
+      margin-right: 10px;
+      color: #00d4ff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #aaa;
+      margin-top: 60px;
+    }
+    a {
+      color: #00d4ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes slideUp {
+      from {transform: translateY(20px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Hi, I'm a DevOps Engineer</h1>
-    <p>Fresher | Cloud Enthusiast | Automation Lover</p>
+    <h1>Hello, I'm a DevOps Engineer</h1>
+    <p>Fresher | Automation Enthusiast | Cloud Learner</p>
   </header>
 
-  <section class="about">
+  <section>
     <h2>About Me</h2>
-    <p>I’m a passionate DevOps fresher with skills in Git, Docker, Kubernetes, Linux, AWS, and more. I'm always learning and love building automated, scalable systems.</p>
+    <p>I'm currently pursuing BTech from Medi-Caps University, Indore with a CGPA of 7.34. I have a keen interest in automating infrastructure, working with cloud technologies, and building CI/CD pipelines. I'm a fast learner and excited to contribute to the world of DevOps.</p>
   </section>
 
-  <section class="skills">
+  <section>
     <h2>Skills</h2>
     <ul>
       <li>Git & GitHub</li>
@@ -29,11 +100,13 @@
     </ul>
   </section>
 
+  <section>
+    <h2>Connect</h2>
+    <p>LinkedIn: <a href="#">Your LinkedIn</a> | GitHub: <a href="#">Your GitHub</a></p>
+  </section>
+
   <footer>
-    <p>Connect with me on 
-      <a href="#">LinkedIn</a> | 
-      <a href="#">GitHub</a>
-    </p>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
 </body>
 </html>
